@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#FAFAFA"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Будівельний рівень"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="30dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="40dp">
+
+        <TextView
+            android:id="@+id/tvAngleX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X: 0°"
+            android:textSize="20sp"
+            android:layout_marginEnd="20dp"/>
+
+        <TextView
+            android:id="@+id/tvAngleY"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Y: 0°"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/levelContainer"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:background="@drawable/bg_level_circle">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#9E9E9E"
+            android:layout_gravity="center_vertical"/>
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="#9E9E9E"
+            android:layout_gravity="center_horizontal"/>
+
+        <View
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_level_circle"/>
+
+        <View
+            android:id="@+id/bubble"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:background="@drawable/bubble"/>
+
+    </FrameLayout>
+
+</LinearLayout>
